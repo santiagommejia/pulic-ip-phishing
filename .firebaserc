@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "christmas-cards-b827b": {
+      "hosting": {
+        "merry-christmas": [
+          "christmas-cards-b827b"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "christmas-cards-b827b"
+  }
+}

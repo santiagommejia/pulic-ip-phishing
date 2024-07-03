@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { FirebaseService } from './services/firebase.service';
+
 
 @Component({
   selector: 'app-root',
@@ -11,4 +13,12 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'merry-christmas';
+
+  constructor(private firebase: FirebaseService) {
+  }
+
+  
+  ngafterviewinit() {
+    this.firebase.getWelcomeDescription();
+  }
 }
